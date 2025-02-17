@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Weather App</h1>
+    <input type="text" id="cityInput" placeholder="Enter city name" />
+    <button id="searchBtn">Get Weather</button>
+    
+    <!-- Display current date and time -->
+    <div id="dateTime"></div>
+
+    <div id="weatherInfo" class="hidden">
+      <div class="main-info">
+        <h2 id="cityName"></h2>
+        <h3 id="currentTemp"></h3>
+        <div id="weatherIcon"></div>
+      </div>
+      <div class="details">
+        <p>Max Temp: <span id="maxTemp"></span>°C</p>
+        <p>Min Temp: <span id="minTemp"></span>°C</p>
+        <p>Wind Speed: <span id="windSpeed"></span> km/h</p>
+        <p>Pressure: <span id="pressure"></span> hPa</p>
+        <p>Humidity: <span id="humidity"></span>%</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
